@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@vercel/blob": "^2.8.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "id": "1",
+    "nama_kos": "Kost Arunika Residence",
+    "tipe": "Putri",
+    "harga": 1250000,
+    "lokasi_singkat": "Seturan, dekat Universitas Atma Jaya, Yogyakarta",
+    "gambar_utama": "assets/images/kos-1.jpg",
+    "galeri_foto": [
+      "assets/images/kos-1.jpg",
+      "assets/images/kos-2.jpg",
+      "assets/images/kos-3.jpg"
+    ],
+    "fasilitas": [
+      "AC",
+      "Wi-Fi cepat",
+      "Kamar mandi dalam",
+      "Kasur springbed",
+      "Lemari pakaian",
+      "Parkir luas",
+      "CCTV 24 jam"
+    ],
+    "deskripsi": "Kost putri yang tenang, bersih, dan nyaman untuk mahasiswa maupun pekerja. Setiap kamar dilengkapi kamar mandi dalam dan furnitur utama. Lingkungan kost aman dengan akses CCTV dan area bersama yang terawat. Berjarak sekitar tujuh menit ke Universitas Atma Jaya, dekat minimarket, tempat makan, dan transportasi umum. Penghuni diharapkan menjaga ketenangan dan kebersihan area bersama.",
+    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Kost+Arunika+Residence+Seturan+Yogyakarta",
+    "wa_number": "6281234567890"
+  },
+  {
+    "id": "2",
+    "nama_kos": "Kost Nawasena Living",
+    "tipe": "Eksklusif",
+    "harga": 2100000,
+    "lokasi_singkat": "Gejayan, dekat pusat kuliner, Yogyakarta",
+    "gambar_utama": "assets/images/kos-2.jpg",
+    "galeri_foto": [
+      "assets/images/kos-2.jpg",
+      "assets/images/kos-3.jpg",
+      "assets/images/kos-1.jpg"
+    ],
+    "fasilitas": [
+      "AC",
+      "Wi-Fi cepat",
+      "Kamar mandi dalam",
+      "Lemari pakaian",
+      "Dapur bersama",
+      "Parkir luas",
+      "CCTV 24 jam"
+    ],
+    "deskripsi": "Hunian eksklusif dengan interior modern dan fasilitas yang dirancang untuk mendukung produktivitas. Area bersama yang nyaman, dapur komunal, serta akses keamanan membuat aktivitas harian terasa praktis. Lokasi strategis di Gejayan, dekat kampus, pusat kuliner, dan pusat kota. Pengunjung mengikuti aturan bertamu dan area bersama dijaga tetap bersih.",
+    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Kost+Nawasena+Living+Gejayan+Yogyakarta",
+    "wa_number": "6281234567890"
+  },
+  {
+    "id": "3",
+    "nama_kos": "Kost Griya Mahasiswa",
+    "tipe": "Putra",
+    "harga": 950000,
+    "lokasi_singkat": "Babarsari, dekat kampus UPN, Yogyakarta",
+    "gambar_utama": "assets/images/kos-3.jpg",
+    "galeri_foto": [
+      "assets/images/kos-3.jpg",
+      "assets/images/kos-1.jpg",
+      "assets/images/kos-2.jpg"
+    ],
+    "fasilitas": [
+      "Wi-Fi cepat",
+      "Kasur",
+      "Lemari pakaian",
+      "Parkir luas",
+      "Dapur bersama",
+      "Akses 24 jam"
+    ],
+    "deskripsi": "Pilihan kost putra dengan harga bersahabat di area Babarsari. Kamar dilengkapi kasur, lemari, dan area belajar. Lokasinya dekat dengan kampus UPN, pilihan tempat makan, serta akses transportasi. Area kost memiliki dapur bersama dan parkir untuk penghuni. Penghuni diminta menjaga ketertiban dan kebersihan fasilitas bersama.",
+    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Kost+Griya+Mahasiswa+Babarsari+Yogyakarta",
+    "wa_number": "6281234567890"
+  },
+  {
+    "id": "4",
+    "nama_kos": "Kost Taman Sari",
+    "tipe": "Putri",
+    "harga": 1450000,
+    "lokasi_singkat": "Condongcatur, dekat Hartono Mall, Yogyakarta",
+    "gambar_utama": "assets/images/kos-1.jpg",
+    "galeri_foto": [
+      "assets/images/kos-1.jpg",
+      "assets/images/kos-3.jpg",
+      "assets/images/kos-2.jpg"
+    ],
+    "fasilitas": [
+      "AC",
+      "Wi-Fi cepat",
+      "Kamar mandi dalam",
+      "Area jemur",
+      "Parkir luas",
+      "CCTV 24 jam"
+    ],
+    "deskripsi": "Kost putri dengan suasana asri dan fasilitas lengkap untuk tinggal jangka panjang. Area jemur dan parkir tersedia bagi penghuni. Berlokasi di Condongcatur, dekat pusat belanja, kampus, dan pilihan transportasi. Pengelola menerapkan jam berkunjung yang tertib dan memastikan lingkungan bersama tetap nyaman.",
+    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Kost+Taman+Sari+Condongcatur+Yogyakarta",
+    "wa_number": "6281234567890"
+  },
+  {
+    "id": "5",
+    "nama_kos": "Kost Urban Nest",
+    "tipe": "Campur",
+    "harga": 1750000,
+    "lokasi_singkat": "Kaliurang, dekat UGM, Yogyakarta",
+    "gambar_utama": "assets/images/kos-2.jpg",
+    "galeri_foto": [
+      "assets/images/kos-2.jpg",
+      "assets/images/kos-1.jpg",
+      "assets/images/kos-3.jpg"
+    ],
+    "fasilitas": [
+      "AC",
+      "Wi-Fi cepat",
+      "Kamar mandi dalam",
+      "Ruang komunal",
+      "Parkir luas",
+      "CCTV 24 jam"
+    ],
+    "deskripsi": "Hunian campur yang nyaman dengan area komunal untuk bekerja atau bersantai. Kamar dilengkapi fasilitas dasar dan akses internet cepat. Dari sini, UGM dapat dijangkau dalam beberapa menit, sementara kafe dan kebutuhan harian berada di sekitar kost. Penghuni mengikuti aturan kebersihan dan ketenangan di area bersama.",
+    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Kost+Urban+Nest+Kaliurang+Yogyakarta",
+    "wa_number": "6281234567890"
+  },
+  {
+    "id": "6",
+    "nama_kos": "Kost Omah Senja",
+    "tipe": "Eksklusif",
+    "harga": 2350000,
+    "lokasi_singkat": "Timoho, dekat pusat kota, Yogyakarta",
+    "gambar_utama": "assets/images/kos-3.jpg",
+    "galeri_foto": [
+      "assets/images/kos-3.jpg",
+      "assets/images/kos-2.jpg",
+      "assets/images/kos-1.jpg"
+    ],
+    "fasilitas": [
+      "AC",
+      "Wi-Fi cepat",
+      "Kamar mandi dalam",
+      "Kasur springbed",
+      "Dapur bersama",
+      "CCTV 24 jam"
+    ],
+    "deskripsi": "Kost eksklusif bernuansa hangat di kawasan Timoho yang strategis. Kamar berperabot dengan kamar mandi dalam, sementara pantry bersama tersedia untuk kebutuhan harian. Akses menuju kampus dan pusat kota mudah, dengan minimarket dan tempat makan di dekat kost. Penghuni mengikuti ketentuan pengelola mengenai tamu dan penggunaan area bersama.",
+    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Kost+Omah+Senja+Timoho+Yogyakarta",
+    "wa_number": "6281234567890"
+  }
+]

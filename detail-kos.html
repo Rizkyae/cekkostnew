@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b2a4a">
+  <meta name="description" content="Lihat detail kost, fasilitas, lokasi, dan jadwalkan survey bersama CekKos.">
+  <title>Detail Kost — CekKos.</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CekKos, kembali ke beranda"><img src="assets/images/logo.png" alt="" width="42" height="42"><span>CekKos<span class="brand-dot">.</span></span></a>
+      <a class="back-link" href="index.html#katalog"><span aria-hidden="true">←</span> Kembali ke katalog</a>
+    </div>
+  </header>
+  <main class="container detail-container" id="detail-content">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Beranda</a><span aria-hidden="true">/</span><a href="index.html#katalog">Katalog kost</a><span aria-hidden="true">/</span><span id="breadcrumb-name">Detail kost</span></nav>
+    <div id="detail-not-found" class="empty-state" hidden><span class="empty-icon" aria-hidden="true">⌂</span><h1>Kost tidak ditemukan</h1><p>Data kost yang kamu cari tidak tersedia.</p><a class="button button-primary" href="index.html#katalog">Kembali ke katalog</a></div>
+    <article id="kost-detail" hidden>
+      <div class="detail-heading">
+        <div><span class="kost-tag" id="detail-type"></span><h1 id="detail-title"></h1><p class="kost-location" id="detail-location"></p></div>
+        <div class="detail-price"><span>Harga mulai dari</span><strong id="detail-price"></strong><small>/ bulan</small></div>
+      </div>
+      <section class="gallery" aria-label="Galeri foto kost">
+        <img class="gallery-main" id="gallery-main" src="" alt="">
+        <div class="gallery-thumbnails" id="gallery-thumbnails"></div>
+      </section>
+      <div class="detail-layout">
+        <div class="detail-main">
+          <section class="detail-section">
+            <p class="section-kicker">Kenyamananmu</p><h2>Fasilitas kost</h2>
+            <div class="facility-list" id="facility-list"></div>
+          </section>
+          <section class="detail-section description-section">
+            <p class="section-kicker">Kenali lebih dekat</p><h2>Tentang kost ini</h2>
+            <p id="detail-description"></p>
+            <h3>Aturan &amp; ketentuan sewa</h3>
+            <ul class="house-rules">
+              <li>Penghuni menunjukkan identitas diri saat proses sewa.</li>
+              <li>Tamu wajib mengikuti aturan kunjungan yang ditetapkan pengelola.</li>
+              <li>Penghuni menjaga kebersihan dan ketenangan lingkungan kost.</li>
+              <li>Ketentuan pembayaran dan ketersediaan kamar dikonfirmasi saat survey.</li>
+            </ul>
+          </section>
+        </div>
+        <aside class="booking-card">
+          <p class="section-kicker">Tertarik dengan kost ini?</p><h2>Jadwalkan kunjunganmu.</h2>
+          <p>Lihat langsung lingkungan dan fasilitas kost sebelum menentukan pilihan.</p>
+          <a class="button button-outline button-full" id="maps-button" href="#" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌖</span> Lihat Lokasi (G. Maps)</a>
+          <a class="button button-primary button-full" id="survey-button" href="#" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◉</span> Jasa Survey via WhatsApp</a>
+          <small>Tim CekKos siap membantu pertanyaan dan jadwal survey.</small>
+        </aside>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><img src="assets/images/logo.png" alt="" width="38" height="38"><span>CekKos<span class="brand-dot">.</span></span></a><p>Temukan tempat pulangmu.</p><small>© <span id="current-year"></span> CekKos.</small></div></footer>
+</body>
+</html>

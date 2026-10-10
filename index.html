@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b2a4a">
+  <meta name="description" content="Cari kost nyaman dan terpercaya bersama CekKos. Bandingkan pilihan, cek fasilitas, dan jadwalkan survey dengan mudah.">
+  <title>CekKos. — Cari Kost Nyaman Tanpa Ribet</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CekKos, beranda">
+        <img src="assets/images/logo.png" alt="" width="42" height="42">
+        <span>CekKos<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <a href="#home">Home</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#katalog">Katalog</a>
+        <a class="nav-contact" href="https://wa.me/6281234567890?text=Halo%20CekKos%2C%20saya%20ingin%20bertanya%20tentang%20kost." target="_blank" rel="noopener noreferrer">Kontak / WhatsApp <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-image">
+        <div class="hero-content">
+          <p class="eyebrow eyebrow-light"><span class="status-dot"></span>Tempat nyamanmu dimulai di sini</p>
+          <h1 id="hero-title">Cari &amp; Temukan Kost Impianmu <span>Tanpa Ribet.</span></h1>
+          <p class="hero-copy">Pilihan kost terkurasi, informasi transparan, dan bantuan survey untuk menemukan tempat tinggal yang paling pas.</p>
+          <a class="button button-white" href="#katalog">Jelajahi kost <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">✓</span><span><strong>Nyaman, aman, terpercaya</strong><small>Pilihan untuk perjalanan barumu</small></span></div>
+      </div>
+      <form class="search-panel" id="search-form" role="search">
+        <label class="search-field">
+          <span class="field-icon" aria-hidden="true">⌖</span>
+          <span class="field-content"><span class="field-label">Lokasi kost</span><input id="location-search" name="location" type="search" placeholder="Kota, area, atau kampus" autocomplete="off"></span>
+        </label>
+        <label class="search-field search-select">
+          <span class="field-icon" aria-hidden="true">⌂</span>
+          <span class="field-content"><span class="field-label">Tipe kost</span>
+            <select id="type-search" name="type">
+              <option value="">Semua tipe</option>
+              <option value="Putra">Kost putra</option>
+              <option value="Putri">Kost putri</option>
+              <option value="Eksklusif">Eksklusif</option>
+              <option value="Campur">Campur</option>
+            </select>
+          </span>
+        </label>
+        <button class="button button-primary search-button" type="submit"><span aria-hidden="true">⌕</span> Cari Kost</button>
+      </form>
+    </section>
+
+    <section class="container categories" aria-label="Kategori kost">
+      <div><p class="section-kicker">Mulai pencarianmu</p><h2 class="small-heading">Temukan yang sesuai</h2></div>
+      <div class="category-list">
+        <button class="category-chip is-active" type="button" data-category="Semua">Semua kost</button>
+        <button class="category-chip" type="button" data-category="Putra">Kost putra</button>
+        <button class="category-chip" type="button" data-category="Putri">Kost putri</button>
+        <button class="category-chip" type="button" data-category="Eksklusif">Eksklusif</button>
+        <button class="category-chip" type="button" data-category="Campur">Campur</button>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="keunggulan">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div><p class="section-kicker">Mengapa CekKos?</p><h2>Temukan kost dengan lebih tenang.</h2></div>
+          <p class="section-intro">Kami bantu kamu memilah pilihan hunian dengan informasi yang jelas, lokasi strategis, dan proses survey yang praktis.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v5c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-4.8"/></svg></span><h3>Terpercaya</h3><p>Pilihan kost terkurasi dengan detail yang membantu kamu mengambil keputusan.</p></article>
+          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Lokasi strategis</h3><p>Temukan hunian dekat kampus, tempat kerja, dan kebutuhan sehari-hari.</p></article>
+          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M6 3v4m12-4v4M5 11h14v9H5z"/><path d="M9 15h6"/></svg></span><h3>Harga transparan</h3><p>Informasi harga dan fasilitas disajikan jelas, tanpa biaya tersembunyi.</p></article>
+        </div>
+        <div class="stats-strip">
+          <div><strong>30<span>+</span></strong><small>Kost terverifikasi</small></div>
+          <div><strong>5k<span>+</span></strong><small>Penghuni puas</small></div>
+          <div><strong>07<span>+</span></strong><small>Tahun pengalaman</small></div>
+          <div><strong>33<span>+</span></strong><small>Partner properti</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tentang">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="section-kicker">Tentang CekKos.</p>
+          <h2>Lebih mudah menemukan tempat untuk pulang.</h2>
+          <p>CekKos adalah platform pencarian kost yang membantu calon penghuni menemukan hunian sesuai kebutuhan dan anggaran. Kami percaya proses mencari tempat tinggal seharusnya terasa mudah, jelas, dan nyaman.</p>
+          <p>Dari informasi lokasi hingga fasilitas dan bantuan survey, kami menemani setiap langkahmu menemukan ruang yang terasa seperti rumah.</p>
+          <a class="text-link" href="#katalog">Kenali pilihan kost <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="about-visual">
+          <img class="about-image-main" src="assets/images/kos-2.jpg" alt="Interior kamar yang nyaman" loading="lazy">
+          <div class="about-image-small"><img src="assets/images/kos-3.jpg" alt="Ruang kost dengan fasilitas modern" loading="lazy"></div>
+          <div class="about-badge"><strong>Nyaman</strong><span>dimulai dari pilihan tepat</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft catalog-section" id="katalog">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div><p class="section-kicker">Katalog kost</p><h2>Pilihan kost terbaik untukmu.</h2></div>
+          <p class="section-intro">Cari hunian yang mendukung keseharianmu, dengan pilihan fasilitas dan lokasi yang beragam.</p>
+        </div>
+        <div class="catalog-meta"><span id="result-count" aria-live="polite"></span><button id="clear-search" class="clear-search" type="button">Hapus filter</button></div>
+        <div class="kost-grid" id="kost-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true">⌕</span><h3>Kost belum ditemukan</h3><p>Coba kata kunci lokasi atau kategori yang berbeda.</p>
+          <button class="button button-primary" id="reset-search" type="button">Tampilkan semua kost</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container cta-section">
+      <div><p class="eyebrow eyebrow-light">Langkah pertama menuju tempat baru</p><h2>Kost nyamanmu sudah menunggu.</h2><p>Jelajahi pilihan dan jadwalkan survey bersama tim CekKos.</p></div>
+      <a class="button button-white" href="#katalog">Cari kost sekarang <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><img src="assets/images/logo.png" alt="" width="38" height="38"><span>CekKos<span class="brand-dot">.</span></span></a>
+      <p>Temukan tempat pulangmu.</p>
+      <a href="https://wa.me/6281234567890?text=Halo%20CekKos%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener noreferrer">Hubungi kami <span aria-hidden="true">↗</span></a>
+      <a href="admin-login.html">Panel admin</a>
+      <small>© <span id="current-year"></span> CekKos. Semua hak dilindungi.</small>
+    </div>
+  </footer>
+</body>
+</html>

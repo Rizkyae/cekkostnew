@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b2a4a">
+  <meta name="description" content="Kelola katalog kost CekKos.">
+  <title>Dashboard Admin — CekKos.</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/admin.js" defer></script>
+</head>
+<body class="admin-body" data-admin-dashboard>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="" width="42" height="42"><span>CekKos<span class="brand-dot">.</span></span></a>
+      <div class="admin-header-actions"><a class="admin-view-link" href="index.html" target="_blank" rel="noopener noreferrer">Lihat website <span aria-hidden="true">↗</span></a><button class="button button-outline admin-logout" type="button" id="admin-logout">Keluar</button></div>
+    </div>
+  </header>
+  <main class="container admin-dashboard">
+    <div class="admin-page-heading">
+      <div><p class="section-kicker">Panel pengelola</p><h1>Manajemen data kost</h1><p>Kelola daftar kost yang tampil di website CekKos.</p></div>
+      <button class="button button-primary" type="button" id="export-json"><span aria-hidden="true">↓</span> Export JSON</button>
+    </div>
+    <div id="admin-notice" class="admin-notice" role="status" aria-live="polite" hidden></div>
+    <section class="admin-summary" aria-label="Ringkasan data">
+      <div><span class="summary-icon" aria-hidden="true">⌂</span><span><strong id="total-listings">0</strong><small>kost terdaftar</small></span></div>
+      <p>Perubahan dan foto disimpan di server agar langsung terlihat dari perangkat lain.</p>
+      <button class="button button-outline button-small" type="button" id="import-local-data" hidden>Impor data lama dari perangkat ini</button>
+    </section>
+    <div class="admin-workspace">
+      <section class="admin-panel admin-list-panel">
+        <div class="admin-panel-heading"><div><p class="section-kicker">Katalog</p><h2>Daftar kost</h2></div><button class="button button-primary button-small" type="button" id="new-kost">+ Tambah kost</button></div>
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Kost</th><th>Harga / bulan</th><th>Tipe</th><th>Aksi</th></tr></thead>
+            <tbody id="admin-kost-list"></tbody>
+          </table>
+        </div>
+        <p id="admin-empty" class="admin-empty" hidden>Belum ada data kost. Tambahkan kost pertama.</p>
+        <p class="admin-data-source" id="admin-data-source">Memuat data kost…</p>
+      </section>
+      <section class="admin-panel admin-editor" id="kost-editor">
+        <div class="admin-panel-heading"><div><p class="section-kicker">Formulir</p><h2 id="editor-title">Tambah kost baru</h2></div><button class="editor-close" type="button" id="cancel-edit" aria-label="Reset formulir">×</button></div>
+        <form id="kost-form" class="admin-form">
+          <input type="hidden" name="id">
+          <div class="form-grid">
+            <label class="admin-field form-span-2"><span>Nama kost</span><input name="nama_kos" required maxlength="100" placeholder="Contoh: Kost Arunika Residence"></label>
+            <label class="admin-field"><span>Harga per bulan (Rp)</span><input name="harga" type="number" min="1" step="1000" required placeholder="1250000"></label>
+            <label class="admin-field"><span>Tipe kost</span><select name="tipe" required><option value="Putra">Putra</option><option value="Putri">Putri</option><option value="Eksklusif">Eksklusif</option><option value="Campur">Campur</option></select></label>
+            <label class="admin-field form-span-2"><span>Lokasi singkat</span><input name="lokasi_singkat" required maxlength="180" placeholder="Seturan, dekat kampus, Yogyakarta"></label>
+          </div>
+          <section class="admin-image-manager" aria-labelledby="image-manager-title">
+            <div class="image-manager-heading"><div><span id="image-manager-title">Foto kost</span><small>Pilih foto dari perangkat. Klik foto untuk menjadikannya sampul.</small></div></div>
+            <label class="image-upload-button" for="gallery-upload"><span aria-hidden="true">＋</span> Pilih foto kost<input id="gallery-upload" type="file" accept="image/*" multiple></label>
+            <p class="image-upload-help">Format gambar umum didukung. Foto yang sama tidak akan ditambahkan dua kali.</p>
+            <input type="hidden" name="gambar_utama">
+            <input type="hidden" name="galeri_foto">
+            <div id="image-gallery" class="admin-image-gallery" aria-live="polite"></div>
+            <p id="image-gallery-empty" class="image-gallery-empty">Belum ada foto. Pilih satu atau beberapa gambar untuk memulai.</p>
+          </section>
+          <fieldset class="facility-fieldset"><legend>Fasilitas</legend><div class="admin-checkbox-grid">
+            <label><input type="checkbox" name="fasilitas" value="AC"><span>AC</span></label>
+            <label><input type="checkbox" name="fasilitas" value="Wi-Fi cepat"><span>Wi-Fi cepat</span></label>
+            <label><input type="checkbox" name="fasilitas" value="Kamar mandi dalam"><span>Kamar mandi dalam</span></label>
+            <label><input type="checkbox" name="fasilitas" value="Kasur springbed"><span>Kasur springbed</span></label>
+            <label><input type="checkbox" name="fasilitas" value="Lemari pakaian"><span>Lemari pakaian</span></label>
+            <label><input type="checkbox" name="fasilitas" value="Parkir luas"><span>Parkir luas</span></label>
+            <label><input type="checkbox" name="fasilitas" value="CCTV 24 jam"><span>CCTV 24 jam</span></label>
+            <label><input type="checkbox" name="fasilitas" value="Dapur bersama"><span>Dapur bersama</span></label>
+          </div></fieldset>
+          <label class="admin-field"><span>Fasilitas lainnya</span><input name="fasilitas_tambahan" placeholder="Contoh: Area jemur, Akses 24 jam"><small>Pisahkan dengan koma jika lebih dari satu.</small></label>
+          <label class="admin-field"><span>Deskripsi, aturan, dan ketentuan</span><textarea name="deskripsi" rows="5" required placeholder="Jelaskan fasilitas, lingkungan sekitar, dan aturan kost..."></textarea></label>
+          <label class="admin-field"><span>Link Google Maps</span><input name="gmaps_url" type="url" required placeholder="https://www.google.com/maps/search/?api=1&amp;query=..."></label>
+          <label class="admin-field"><span>Nomor WhatsApp (format internasional)</span><input name="wa_number" inputmode="numeric" pattern="[0-9]{9,15}" required placeholder="6281234567890"><small>Tanpa tanda +, spasi, atau tanda baca.</small></label>
+          <div class="editor-actions"><button class="button button-primary" type="submit" id="save-kost">Simpan kost</button><button class="button button-outline" type="button" id="cancel-form">Batal</button></div>
+        </form>
+      </section>
+    </div>
+    <p class="admin-security-note"><strong>Catatan hosting:</strong> gunakan HTTPS dan hubungkan Blob Store Vercel. Perubahan kost serta foto tersimpan di Blob Store yang sama untuk seluruh perangkat.</p>
+  </main>
+</body>
+</html>

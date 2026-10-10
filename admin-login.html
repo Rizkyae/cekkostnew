@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b2a4a">
+  <meta name="description" content="Login panel admin CekKos.">
+  <title>Login Admin — CekKos.</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/admin.js" defer></script>
+</head>
+<body class="admin-body">
+  <main class="admin-auth-layout">
+    <section class="admin-auth-card" aria-labelledby="login-title">
+      <a class="brand admin-brand" href="index.html"><img src="assets/images/logo.png" alt="" width="42" height="42"><span>CekKos<span class="brand-dot">.</span></span></a>
+      <p class="section-kicker">Ruang pengelola</p>
+      <h1 id="login-title">Selamat datang kembali.</h1>
+      <p class="admin-lead">Masuk untuk mengelola informasi dan katalog kost CekKos.</p>
+      <form id="admin-login-form" class="admin-form">
+        <label class="admin-field"><span>Username</span><input type="text" name="username" autocomplete="username" required placeholder="Masukkan username"></label>
+        <label class="admin-field"><span>Password</span><input type="password" name="password" autocomplete="current-password" required placeholder="Masukkan password"></label>
+        <button class="button button-primary button-full" type="submit">Masuk ke dashboard <span aria-hidden="true">→</span></button>
+        <p id="login-message" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <aside class="demo-notice"><strong>Kredensial admin</strong><span>Untuk hosting di Vercel, masukkan username dan password yang diatur di Environment Variables.</span><small>Untuk Laragon lokal, akun demo: admin / admin123. Jangan gunakan akun demo di website online.</small></aside>
+      <a class="admin-back-link" href="index.html">← Kembali ke website</a>
+    </section>
+    <div class="admin-auth-aside">
+      <img src="assets/images/banner-informasi.jpg" alt="Interior properti CekKos">
+      <div><p class="eyebrow eyebrow-light">CekKos. Admin</p><h2>Kelola hunian dengan mudah.</h2><p>Perbarui katalog kost dan bagikan perubahan melalui ekspor JSON.</p></div>
+    </div>
+  </main>
+</body>
+</html>
