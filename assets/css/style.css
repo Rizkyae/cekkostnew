@@ -162,9 +162,9 @@ h1, h2, h3, .brand { font-family: 'Manrope', 'DM Sans', sans-serif; }
 .detail-price span { width: 100%; color: var(--muted); font-size: 10px; text-align: right; }
 .detail-price strong { color: var(--navy); font-family: 'Manrope', sans-serif; font-size: 21px; }
 .detail-price small { color: #8a93a1; font-size: 10px; }
-.gallery { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(180px, .7fr); gap: 12px; height: 395px; }
-.gallery-main { width: 100%; height: 100%; border-radius: 16px; background: #e9edf4; object-fit: cover; }
-.gallery-thumbnails { display: grid; grid-template-rows: repeat(2, minmax(0,1fr)); gap: 12px; }
+.gallery { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(180px, .7fr); grid-template-rows: minmax(0, 1fr); gap: 12px; height: 395px; min-height: 0; overflow: hidden; }
+.gallery-main { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; border-radius: 16px; background: #e9edf4; object-fit: cover; }
+.gallery-thumbnails { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); grid-template-rows: repeat(3, minmax(0,1fr)); grid-auto-rows: minmax(0,1fr); gap: 8px; min-width: 0; min-height: 0; overflow-y: auto; }
 .gallery-thumb { overflow: hidden; border: 0; border-radius: 14px; padding: 0; background: #e9edf4; cursor: pointer; }
 .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .2s; }
 .gallery-thumb:hover img { transform: scale(1.04); }
@@ -376,9 +376,9 @@ h1, h2, h3, .brand { font-family: 'Manrope', 'DM Sans', sans-serif; }
   .detail-heading h1 { font-size: 28px; }
   .detail-price { justify-content: flex-start; }
   .detail-price span { text-align: left; }
-  .gallery { height: auto; grid-template-columns: 1fr; }
+  .gallery { height: auto; grid-template-columns: 1fr; grid-template-rows: auto; overflow: visible; }
   .gallery-main { height: 260px; }
-  .gallery-thumbnails { grid-template-columns: repeat(2, minmax(0,1fr)); grid-template-rows: 90px; }
+  .gallery-thumbnails { grid-template-columns: repeat(2, minmax(0,1fr)); grid-template-rows: 90px; grid-auto-rows: 90px; overflow: visible; }
   .detail-layout { grid-template-columns: 1fr; gap: 9px; margin-top: 27px; }
   .detail-section h2, .booking-card h2 { font-size: 19px; }
   .facility-list { gap: 12px 8px; }
