@@ -1,8 +1,9 @@
 # Deploy CekKos ke Vercel
 
 Vercel meng-host HTML/CSS/JavaScript dan endpoint serverless Node.js pada
-`api/`. Vercel **tidak menjalankan PHP** pada `api/kos.php`, dan file di sistem
-serverless Vercel tidak bisa dijadikan penyimpanan permanen. Karena itu versi
+`api/`. File PHP untuk Laragon berada pada `laragon-api/`, di luar folder
+fungsi Vercel, agar tidak bentrok dengan nama endpoint Node.js. Vercel tidak
+menyediakan penyimpanan permanen pada sistem file serverless, jadi versi
 Vercel memakai Vercel Blob sebagai penyimpanan file bersama (bukan database):
 
 - JSON katalog: `cekkos/database/kos.json` di Blob Store.
@@ -46,9 +47,9 @@ tersebut yang ingin dipertahankan; foto data URL lama turut diunggah ke Blob.
 
 ## Pengembangan lokal dengan Laragon
 
-Endpoint PHP `api/kos.php` dan `api/upload.php` tetap tersedia untuk Laragon.
-Nama host localhost mengarahkan frontend ke endpoint PHP; domain Vercel
-mengarahkan frontend ke serverless API Node.js.
+Endpoint PHP `laragon-api/kos.php` dan `laragon-api/upload.php` tetap tersedia
+untuk Laragon. Nama host localhost mengarahkan frontend ke endpoint PHP; domain
+Vercel mengarahkan frontend ke serverless API Node.js pada `api/`.
 
 Gunakan HTTPS dan password kuat. JSON adalah file bersama, bukan database
 transaksional; hindari menyunting katalog secara bersamaan dari banyak admin.

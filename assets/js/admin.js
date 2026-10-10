@@ -3,8 +3,8 @@
 
   const IS_LOCAL_PHP_HOST = /^(localhost|127(?:\.\d{1,3}){3}|::1|.*\.(?:test|local))$/i.test(window.location.hostname)
     && !['3000', '3001', '5173'].includes(window.location.port);
-  const API_URL = IS_LOCAL_PHP_HOST ? 'api/kos.php' : '/api/kos';
-  const UPLOAD_URL = IS_LOCAL_PHP_HOST ? 'api/upload.php' : '/api/upload';
+  const API_URL = IS_LOCAL_PHP_HOST ? 'laragon-api/kos.php' : '/api/kos';
+  const UPLOAD_URL = IS_LOCAL_PHP_HOST ? 'laragon-api/upload.php' : '/api/upload';
   const LEGACY_STORAGE_KEY = 'cekkos_kos_data_v1';
   const DEFAULT_IMAGE = 'assets/images/kos-1.jpg';
   let csrfToken = '';

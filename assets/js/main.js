@@ -4,7 +4,7 @@
   const DATA_URL = 'data/kos.json';
   const IS_LOCAL_PHP_HOST = /^(localhost|127(?:\.\d{1,3}){3}|::1|.*\.(?:test|local))$/i.test(window.location.hostname)
     && !['3000', '3001', '5173'].includes(window.location.port);
-  const API_URL = IS_LOCAL_PHP_HOST ? 'api/kos.php' : '/api/kos';
+  const API_URL = IS_LOCAL_PHP_HOST ? 'laragon-api/kos.php' : '/api/kos';
   const FALLBACK_IMAGE = 'assets/images/kos-1.jpg';
   const FACILITY_ICONS = {
     'AC': '❄',
